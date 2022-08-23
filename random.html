@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="flex">
+      <div class="logo">Curriculum Vitae<span>!</span></div>
+      <nav>
+        <ul class="flex">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#project">Portfolio</a></li>
+          <li><a href="#contact">Reach me</a></li>
+        </ul>
+        <div id="search" class="flex">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" name="" id="" placeholder="Search..." />
+        </div>
+      </nav>
+    </header>
+
+    <div class="main flex">
+      <div class="main-one">
+        <h1>Hello! I am</h1>
+        <span class="auto">.</span>
+        <p>
+          A short website in order to express information related to me
+          through web development skills. This website holds some brief explaination on my projects
+          and have a brief intro in "About" section
+        </p>
+        <button><a href="#project" style="color: black; text-decoration: none;">Why to hire me?</a></button>
+      </div>
+      <div class="main-two">
+        <img src="mepic.png" alt="" />
+      </div>
+    </div>
+
+    <section class="projects" id="project">
+      <h1>My Awesome <br /><span>Projects</span></h1>
+      <p>
+        Here is some collectives of my projects. They are hovering on the right side of your screen
+        check out them and don't forget to pre-register them!
+      </p>
+      <div class="projects-div flex div-1">
+        <img src="web.png" alt="Unable to load" height="80" />
+        <h3>Web Automation </h3>
+        <p>
+          A program which makes your daily browser related task done without intervention of physical mouse and
+          keyboard.
+        </p>
+        <button id="press1" onclick="myFunction1()">Pre-register?</button>
+      </div>
+      <div class="projects-div flex div-2">
+        <img src="lms.png" alt="Unable to load" height="80" />
+        <h3>Library Managment System </h3>
+        <p>
+          An efficient managment system which makes your library reliable, easy and structured.
+        </p>
+        <button id="press2" onclick="myFunction2()">Pre-register?</button>
+      </div>
+      <div class="projects-div flex div-3">
+        <img src="pic2.png" alt="Unable to load" />
+        <h3>Tic-Tac-Toe game </h3>
+        <p>
+          A GUI rich multi-mode game which enhance your thinking and decision-making ability high
+        </p>
+        <button id="press3" onclick="myFunction3()">Pre-register?</button>
+      </div>
+    </section>
+    <br /><br />
+
+    <section class="about flex" id="about">
+      <div class="about-one">
+        <h1>About me</h1>
+        <span>Arpit Kumar Dinkar </span>
+        <p>
+          I am Arpit Kumar Dinkar. I am currently pursuing B.Tech. in Computer science,
+          from Delhi Technological University. I am a third year student. I love to participate in Competitive
+          Coding contests. My hobby is to read books and novels, and do coding. I live in Badarpur,New Delhi. I have
+          considerable knowledge in following programming languages: C,C++,Python,HTML,CSS,JS. I like to work on
+          web automation and desktop automation using python and its library. I am very excited to work with your
+          company fellows and expert. I will give my best.
+        </p>
+        <div class="btns" class="flex">
+          <button><a href="https://drive.google.com/file/d/1oG01lZf6YH_Wvgc9QZCToyEV4lFkmrK5/view?usp=sharing"
+              target="_blank" style="color: black; text-decoration: none;">View CV</a></button>
+          <button><a href="#contact" style="color: black; text-decoration: none;">Contact Me</a></button>
+        </div>
+      </div>
+      <div class="about-two">
+        <img src="pic1.png" alt="Unable to load." width="120" height="500" />
+      </div>
+    </section>
+    <br /><br /><br />
+
+    <section class="contact" id="contact">
+      <h1>Let Us <span>Chat!</span></h1>
+      <form>
+        <div class="box flex">
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Your Name.." />
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Your Email.." />
+          </div>
+          <textarea name="" id="" cols="60" rows="5" placeholder="Enter your Message here...."></textarea>
+          <div>
+            <input type="reset" class="send" value="Send" onclick="myFunction5()" />
+          </div>
+        </div>
+      </form>
+    </section>
+    <footer class="flex" id="footer">
+      <div class="copy">@copywrited 2022 Arpit.com</div>
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-solid fa-phone"></i>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto", {
+      strings: [".", "Arpit Kumar Dinkar", "Web Developer", "Competitive Coder"],
+      typeSpeed: 70,
+      backSpeed: 40,
+      loop: true,
+    });
+  </script>
+  <script>
+    function myFunction1() {
+      document.getElementById("press1").innerHTML = "Registered!";
+    }
+    function myFunction2() {
+      document.getElementById("press2").innerHTML = "Registered!";
+    }
+    function myFunction3() {
+      document.getElementById("press3").innerHTML = "Registered!";
+    }
+  </script>
+  <script>
+    function myFunction5() {
+      alert("Your message sent succesfully");
+    }
+  </script>
+</body>
+
+</html>
