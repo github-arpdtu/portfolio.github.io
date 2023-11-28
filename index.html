@@ -152,16 +152,16 @@
     backSpeed: 40,
     // startDelay: 2000,
     loop: true,
-    onStringTyped: function (arrayPos, self) {
-      // Pause after each word is typed
-      setTimeout(function () {
-        self.stop(); // Stop typing
-      }, 2000); // 2-second pause
-    },
-    onLastStringBackspaced: function (self) {
-      // Resume typing after the last word is backspaced
-      self.start();
-    },
+    // onStringTyped: function (arrayPos, self) {
+    //   // Pause after each word is typed
+    //   setTimeout(function () {
+    //     self.stop(); // Stop typing
+    //   }, 2000); // 2-second pause
+    // },
+    // onLastStringBackspaced: function (self) {
+    //   // Resume typing after the last word is backspaced
+    //   self.start();
+    // },
   });
 </script>
   <script>
