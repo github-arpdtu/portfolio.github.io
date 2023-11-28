@@ -143,16 +143,27 @@
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    var typed = new Typed(".auto", {
-      strings: [".", "Arpit Kumar Dinkar", "Web Developer", "Competitive Coder"],
-      typeSpeed: 70,
-      backSpeed: 40,
-      startDelay: 2000,
-      loop: true,
-    });
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  var typed = new Typed(".auto", {
+    strings: [".", "Arpit Kumar Dinkar", "Web Developer", "Competitive Coder"],
+    typeSpeed: 70,
+    backSpeed: 40,
+    // startDelay: 2000,
+    loop: true,
+    onStringTyped: function (arrayPos, self) {
+      // Pause after each word is typed
+      setTimeout(function () {
+        self.stop(); // Stop typing
+      }, 2000); // 2-second pause
+    },
+    onLastStringBackspaced: function (self) {
+      // Resume typing after the last word is backspaced
+      self.start();
+    },
+  });
+</script>
   <script>
     function myFunction1() {
       document.getElementById("press1").innerHTML = "Registered!";
